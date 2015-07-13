@@ -1,5 +1,6 @@
 var express = require('express');
 var cal = require('../app/calculations.js')
+var cal_controller = require('../app/controller/calculation_controller.js')
 var router = express.Router();
 var url = require('url');
 
@@ -15,27 +16,14 @@ router.get('/cal', function(req, res, next) {
 
 /* GET home page. */
 router.get('/amar', function(req, res, next) {
-	var ops = req.query.arithmetic_ops;
-	var finput = parseInt(req.query.finput, 10);
-	var sinput = parseInt(req.query.sinput, 10);
-	var result = 0;
-	if (ops == "add"){
-		cal.add(finput, sinput,  function(err,data){
-			result = data;
-		})
-	}
-	else if (ops == "sub" )
-	{
-		cal.sub(finput, sinput,  function(err,data){
-			result = data;
-		})
-	}
-	else if(ops == "mul"){
-		cal.multiply(finput, sinput,  function(err,data){
-			result = data;
-		})
-	}
-  res.render('amar', { result: result });
+  cal_controller.arithmetic_logic(req, res, function(err, data){
+  	 res.render('amar', { result: data });
+  });
+	
+	
+	
+	
+  
 });
 
 /* GET First name */
