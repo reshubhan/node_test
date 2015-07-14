@@ -1,115 +1,93 @@
-0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'passport' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.39
-4 verbose node symlink /usr/bin/node
-5 verbose readDependencies using package.json deps
-6 verbose cache add [ 'passport', null ]
-7 verbose cache add name=undefined spec="passport" args=["passport",null]
-8 verbose parsed url { protocol: null,
-8 verbose parsed url   slashes: null,
-8 verbose parsed url   auth: null,
-8 verbose parsed url   host: null,
-8 verbose parsed url   port: null,
-8 verbose parsed url   hostname: null,
-8 verbose parsed url   hash: null,
-8 verbose parsed url   search: null,
-8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: 'passport',
-8 verbose parsed url   path: 'passport',
-8 verbose parsed url   href: 'passport' }
-9 silly lockFile a3404013-passport passport
-10 verbose lock passport /home/vagrant/.npm/a3404013-passport.lock
-11 silly lockFile a3404013-passport passport
-12 silly lockFile a3404013-passport passport
-13 verbose addNamed [ 'passport', '' ]
-14 verbose addNamed [ null, '*' ]
-15 silly lockFile d5a254c4-passport passport@
-16 verbose lock passport@ /home/vagrant/.npm/d5a254c4-passport.lock
-17 silly addNameRange { name: 'passport', range: '*', hasData: false }
-18 verbose request where is /passport
-19 verbose request registry https://registry.npmjs.org/
-20 verbose request id 8f17e2aab4e2ce7a
-21 verbose url raw /passport
-22 verbose url resolving [ 'https://registry.npmjs.org/', './passport' ]
-23 verbose url resolved https://registry.npmjs.org/passport
-24 verbose request where is https://registry.npmjs.org/passport
-25 info trying registry request attempt 1 at 10:00:00
-26 verbose etag "30J1X40R0MFPN22K5TYN2RLB"
-27 http GET https://registry.npmjs.org/passport
-28 http 200 https://registry.npmjs.org/passport
-29 silly registry.get cb [ 200,
-29 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-29 silly registry.get     etag: '"2FTYR93TGI0N2XFDSKN5581JC"',
-29 silly registry.get     'content-type': 'application/json',
-29 silly registry.get     'cache-control': 'max-age=60',
-29 silly registry.get     'content-length': '36393',
-29 silly registry.get     'accept-ranges': 'bytes',
-29 silly registry.get     date: 'Mon, 13 Jul 2015 10:06:45 GMT',
-29 silly registry.get     via: '1.1 varnish',
-29 silly registry.get     age: '51',
-29 silly registry.get     connection: 'keep-alive',
-29 silly registry.get     'x-served-by': 'cache-fra1226-FRA',
-29 silly registry.get     'x-cache': 'HIT',
-29 silly registry.get     'x-cache-hits': '2',
-29 silly registry.get     'x-timer': 'S1436782005.796325,VS0,VE0',
-29 silly registry.get     vary: 'Accept' } ]
-30 silly addNameRange number 2 { name: 'passport', range: '*', hasData: true }
-31 silly addNameRange versions [ 'passport',
-31 silly addNameRange   [ '0.1.0',
-31 silly addNameRange     '0.1.1',
-31 silly addNameRange     '0.1.2',
-31 silly addNameRange     '0.1.3',
-31 silly addNameRange     '0.1.4',
-31 silly addNameRange     '0.1.5',
-31 silly addNameRange     '0.1.6',
-31 silly addNameRange     '0.1.7',
-31 silly addNameRange     '0.1.8',
-31 silly addNameRange     '0.1.9',
-31 silly addNameRange     '0.1.10',
-31 silly addNameRange     '0.1.11',
-31 silly addNameRange     '0.1.12',
-31 silly addNameRange     '0.1.13',
-31 silly addNameRange     '0.1.14',
-31 silly addNameRange     '0.1.15',
-31 silly addNameRange     '0.1.16',
-31 silly addNameRange     '0.1.17',
-31 silly addNameRange     '0.1.18',
-31 silly addNameRange     '0.2.0',
-31 silly addNameRange     '0.2.1',
-31 silly addNameRange     '0.2.2' ] ]
-32 verbose addNamed [ 'passport', '0.2.2' ]
-33 verbose addNamed [ '0.2.2', '0.2.2' ]
-34 silly lockFile e0584552-passport-0-2-2 passport@0.2.2
-35 verbose lock passport@0.2.2 /home/vagrant/.npm/e0584552-passport-0-2-2.lock
-36 silly lockFile b56d6135--org-passport-passport-0-2-2-tgz https://registry.npmjs.org/passport/-/passport-0.2.2.tgz
-37 verbose lock https://registry.npmjs.org/passport/-/passport-0.2.2.tgz /home/vagrant/.npm/b56d6135--org-passport-passport-0-2-2-tgz.lock
-38 verbose addRemoteTarball [ 'https://registry.npmjs.org/passport/-/passport-0.2.2.tgz',
-38 verbose addRemoteTarball   '9c38f17beb929f3d81af7b8838e8430db8703f2b' ]
-39 info retry fetch attempt 1 at 10:00:01
-40 verbose fetch to= /tmp/npm-31566-yRPxYGTe/registry.npmjs.org/passport/-/passport-0.2.2.tgz
-41 http GET https://registry.npmjs.org/passport/-/passport-0.2.2.tgz
-42 http 200 https://registry.npmjs.org/passport/-/passport-0.2.2.tgz
-43 silly lockFile b56d6135--org-passport-passport-0-2-2-tgz https://registry.npmjs.org/passport/-/passport-0.2.2.tgz
-44 silly lockFile b56d6135--org-passport-passport-0-2-2-tgz https://registry.npmjs.org/passport/-/passport-0.2.2.tgz
-45 silly lockFile e0584552-passport-0-2-2 passport@0.2.2
-46 silly lockFile e0584552-passport-0-2-2 passport@0.2.2
-47 silly lockFile d5a254c4-passport passport@
-48 silly lockFile d5a254c4-passport passport@
-49 error Error: EACCES, mkdir '/home/vagrant/.npm/passport/0.2.2'
-49 error  { [Error: EACCES, mkdir '/home/vagrant/.npm/passport/0.2.2']
-49 error   errno: 3,
-49 error   code: 'EACCES',
-49 error   path: '/home/vagrant/.npm/passport/0.2.2',
-49 error   parent: 'Test' }
-50 error Please try running this command again as root/Administrator.
-51 error System Linux 3.2.0-23-generic-pae
-52 error command "/usr/bin/node" "/usr/bin/npm" "install" "passport"
-53 error cwd /vagrant/Node_practice/Test
-54 error node -v v0.10.39
-55 error npm -v 1.4.28
-56 error path /home/vagrant/.npm/passport/0.2.2
-57 error code EACCES
-58 error errno 3
-59 error stack Error: EACCES, mkdir '/home/vagrant/.npm/passport/0.2.2'
-60 verbose exit [ 3, true ]
+11056 silly lockFile f993e5bf-e-modules-hawk-node-modules-sntp tar:///vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/sntp
+11057 silly lockFile f993e5bf-e-modules-hawk-node-modules-sntp tar:///vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/sntp
+11058 silly lockFile 6bfa59b2-grant-npm-sntp-1-0-9-package-tgz tar:///home/vagrant/.npm/sntp/1.0.9/package.tgz
+11059 silly lockFile 6bfa59b2-grant-npm-sntp-1-0-9-package-tgz tar:///home/vagrant/.npm/sntp/1.0.9/package.tgz
+11060 info preinstall sntp@1.0.9
+11061 verbose readDependencies using package.json deps
+11062 verbose readDependencies using package.json deps
+11063 silly resolved []
+11064 verbose about to build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/sntp
+11065 info build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/sntp
+11066 verbose linkStuff [ false,
+11066 verbose linkStuff   false,
+11066 verbose linkStuff   false,
+11066 verbose linkStuff   '/vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules' ]
+11067 info linkStuff sntp@1.0.9
+11068 verbose linkBins sntp@1.0.9
+11069 verbose linkMans sntp@1.0.9
+11070 verbose rebuildBundles sntp@1.0.9
+11071 silly lockFile 2734b09b-e-modules-hawk-node-modules-boom tar:///vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/boom
+11072 silly lockFile 2734b09b-e-modules-hawk-node-modules-boom tar:///vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/boom
+11073 info install sntp@1.0.9
+11074 silly lockFile 31900fe0-grant-npm-boom-2-8-0-package-tgz tar:///home/vagrant/.npm/boom/2.8.0/package.tgz
+11075 silly lockFile 31900fe0-grant-npm-boom-2-8-0-package-tgz tar:///home/vagrant/.npm/boom/2.8.0/package.tgz
+11076 info postinstall sntp@1.0.9
+11077 info preinstall boom@2.8.0
+11078 verbose readDependencies using package.json deps
+11079 verbose readDependencies using package.json deps
+11080 silly resolved []
+11081 verbose about to build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/boom
+11082 info build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/boom
+11083 verbose linkStuff [ false,
+11083 verbose linkStuff   false,
+11083 verbose linkStuff   false,
+11083 verbose linkStuff   '/vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules' ]
+11084 info linkStuff boom@2.8.0
+11085 verbose linkBins boom@2.8.0
+11086 verbose linkMans boom@2.8.0
+11087 verbose rebuildBundles boom@2.8.0
+11088 info install boom@2.8.0
+11089 info postinstall boom@2.8.0
+11090 silly lockFile 9a127dc3-e-modules-hawk-node-modules-hoek tar:///vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek
+11091 silly lockFile 9a127dc3-e-modules-hawk-node-modules-hoek tar:///vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek
+11092 silly lockFile 8d8019a5-rant-npm-hoek-2-14-0-package-tgz tar:///home/vagrant/.npm/hoek/2.14.0/package.tgz
+11093 silly lockFile 8d8019a5-rant-npm-hoek-2-14-0-package-tgz tar:///home/vagrant/.npm/hoek/2.14.0/package.tgz
+11094 info preinstall hoek@2.14.0
+11095 verbose readDependencies using package.json deps
+11096 verbose readDependencies using package.json deps
+11097 silly resolved []
+11098 verbose about to build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek
+11099 info build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules/hoek
+11100 verbose linkStuff [ false,
+11100 verbose linkStuff   false,
+11100 verbose linkStuff   false,
+11100 verbose linkStuff   '/vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk/node_modules' ]
+11101 info linkStuff hoek@2.14.0
+11102 verbose linkBins hoek@2.14.0
+11103 verbose linkMans hoek@2.14.0
+11104 verbose rebuildBundles hoek@2.14.0
+11105 info install hoek@2.14.0
+11106 info postinstall hoek@2.14.0
+11107 verbose about to build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk
+11108 info build /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules/hawk
+11109 verbose linkStuff [ false,
+11109 verbose linkStuff   false,
+11109 verbose linkStuff   false,
+11109 verbose linkStuff   '/vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/request/node_modules' ]
+11110 info linkStuff hawk@2.3.1
+11111 verbose linkBins hawk@2.3.1
+11112 verbose linkMans hawk@2.3.1
+11113 verbose rebuildBundles hawk@2.3.1
+11114 verbose rebuildBundles [ 'boom', 'cryptiles', 'hoek', 'sntp' ]
+11115 info install hawk@2.3.1
+11116 info postinstall hawk@2.3.1
+11117 silly gunzTarPerm modes [ '755', '644' ]
+11118 error Error: UNKNOWN, mkdir '/vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/lodash.padright/node_modules/lodash._createpadding/node_modules/lodash.repeat'
+11119 error If you need help, you may report this *entire* log,
+11119 error including the npm and node versions, at:
+11119 error     <http://github.com/npm/npm/issues>
+11120 error System Linux 3.2.0-23-generic-pae
+11121 error command "/usr/bin/node" "/usr/bin/npm" "install" "mongoose"
+11122 error cwd /vagrant/Node_practice/Test
+11123 error node -v v0.10.39
+11124 error npm -v 1.4.28
+11125 error path /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/lodash.padright/node_modules/lodash._createpadding/node_modules/lodash.repeat
+11126 error fstream_path /vagrant/Node_practice/Test/node_modules/mongoose/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp/node_modules/npmlog/node_modules/gauge/node_modules/lodash.padright/node_modules/lodash._createpadding/node_modules/lodash.repeat
+11127 error fstream_type Directory
+11128 error fstream_class DirWriter
+11129 error code UNKNOWN
+11130 error errno -1
+11131 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+11131 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+11131 error fstream_stack Object.oncomplete (fs.js:108:15)
+11132 verbose exit [ -1, true ]
