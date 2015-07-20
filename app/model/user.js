@@ -7,7 +7,9 @@ var User = new Schema({
 	 password: String,
 	 email: String,
 	 firstName: String,
-	 lastName: String
+	 lastName: String,
+	 type: String,
+	 facebook_id: String
 });
 mongoose.model('User', User);
 mongoose.connect('mongodb://localhost:27017/test');
